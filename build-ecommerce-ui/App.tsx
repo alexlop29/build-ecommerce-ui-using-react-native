@@ -5,13 +5,33 @@ import Home from "./pages/Home";
 import Cart from "./pages/Cart";
 import WishList from "./pages/WishList";
 import Account from "./pages/Account";
+import { View } from "react-native";
 
 export default function App() {
   const Tab = createBottomTabNavigator();
 
+  const screenOptions = {
+    tabBarStyle: {
+      backgroundColor: 'black',
+      height: 80,
+      borderRadius: 200,
+      position: 'absolute',
+      bottom: 25,
+      left: 20,
+      right: 20,
+      justifyContent: 'center',
+      alignItems: 'center',
+    },
+    tabBarItemStyle: {
+      backgroundColor: 'black',
+      borderRadius: 200,
+      height: 80,
+    },
+  };
+
   return (
     <NavigationContainer>
-      <Tab.Navigator>
+      <Tab.Navigator {...{ screenOptions }}>
         <Tab.Screen
           name="Home"
           component={Home}
