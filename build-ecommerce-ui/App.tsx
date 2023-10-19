@@ -11,19 +11,20 @@ export default function App() {
   const Tab = createBottomTabNavigator();
 
   const screenOptions = {
+    tabBarShowLabel: false,
     tabBarStyle: {
-      backgroundColor: 'black',
+      backgroundColor: "black",
       height: 80,
       borderRadius: 200,
-      position: 'absolute',
+      position: "absolute",
       bottom: 25,
       left: 20,
       right: 20,
-      justifyContent: 'center',
-      alignItems: 'center',
+      justifyContent: "center",
+      alignItems: "center",
     },
     tabBarItemStyle: {
-      backgroundColor: 'black',
+      backgroundColor: "black",
       borderRadius: 200,
       height: 80,
     },

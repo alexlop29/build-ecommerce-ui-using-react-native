@@ -15,3 +15,4 @@ yarn expo install react-dom react-native-web @expo/webpack-config
 - react-native-vector-icons
 - @react-navigation/bottom-tabs
 - @types/react-native-vector-icons
+- react-native-paper
