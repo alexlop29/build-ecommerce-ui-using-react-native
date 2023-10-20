@@ -12,9 +12,10 @@ export default function App() {
 
   const screenOptions = {
     tabBarShowLabel: false,
+    headerShown: false,
     tabBarStyle: {
       backgroundColor: "black",
-      height: 80,
+      height: 60,
       borderRadius: 200,
       position: "absolute",
       bottom: 25,
@@ -26,7 +27,7 @@ export default function App() {
     tabBarItemStyle: {
       backgroundColor: "black",
       borderRadius: 200,
-      height: 80,
+      height: 60,
     },
   };
 

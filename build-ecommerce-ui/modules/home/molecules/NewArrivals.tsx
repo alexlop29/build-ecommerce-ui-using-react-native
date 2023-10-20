@@ -8,7 +8,7 @@ const NewArrivals = () => {
       <View style={{ backgroundColor: "white" }}>
         <View
           style={{
-            paddingTop: 60,
+            paddingTop: 40,
             paddingLeft: 20,
             paddingRight: 20,
           }}
@@ -20,10 +20,16 @@ const NewArrivals = () => {
             }}
           >
             <Card.Content>
-              <Text variant="displaySmall" style={{ color: "white", fontWeight: "bold" }}>
+              <Text
+                variant="displaySmall"
+                style={{ color: "white", fontWeight: "bold" }}
+              >
                 New Arrival
               </Text>
-              <Text variant="displaySmall" style={{ color: "white", fontWeight: "bold" }}>
+              <Text
+                variant="displaySmall"
+                style={{ color: "white", fontWeight: "bold" }}
+              >
                 Sales
               </Text>
               <Button
