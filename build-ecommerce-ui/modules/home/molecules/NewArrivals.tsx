@@ -1,4 +1,4 @@
-import { View } from "react-native";
+import { Image, View } from "react-native";
 import React from "react";
 import { Card, Text, Button } from "react-native-paper";
 
@@ -20,10 +20,10 @@ const NewArrivals = () => {
             }}
           >
             <Card.Content>
-              <Text variant="titleLarge" style={{ color: "white" }}>
+              <Text variant="displaySmall" style={{ color: "white", fontWeight: "bold" }}>
                 New Arrival
               </Text>
-              <Text variant="titleLarge" style={{ color: "white" }}>
+              <Text variant="displaySmall" style={{ color: "white", fontWeight: "bold" }}>
                 Sales
               </Text>
               <Button
@@ -31,7 +31,8 @@ const NewArrivals = () => {
                 onPress={() => console.log("Pressed")}
                 style={{
                   width: 150,
-                  top: 20,
+                  top: 30,
+                  left: 150,
                 }}
               >
                 Explore now

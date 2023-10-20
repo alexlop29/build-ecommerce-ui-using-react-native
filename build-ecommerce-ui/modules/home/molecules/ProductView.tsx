@@ -36,14 +36,21 @@ const ProductView = () => {
           data={data}
           horizontal={true}
           renderItem={({ item }) => (
-            <Card style={{ width: 200, height: 250, marginRight: 20, overflow: "visible"  }}>
+            <Card
+              style={{
+                width: 200,
+                height: 250,
+                marginRight: 20,
+                overflow: "visible",
+              }}
+            >
               <Card.Cover source={require("../../../assets/nike.png")} />
-              <Card.Content style={{alignItems: 'center'}}>
-                <Text style={{top: -20, left: -50}}>{item.title}</Text>
+              <Card.Content style={{ alignItems: "center" }}>
+                <Text style={{ top: -20, left: -50 }}>{item.title}</Text>
                 <Button
                   mode="contained"
                   onPress={() => console.log("Pressed")}
-                  style={{ bottom: -20, width: 180}}
+                  style={{ bottom: -20, width: 180 }}
                 >
                   $180
                 </Button>
